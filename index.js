@@ -71,10 +71,7 @@ function buildAPI(globalOptions, html, jar) {
     globalOptions: globalOptions,
     loggedIn: true,
     access_token: 'NONE',
-    clientMutationId: 0,
-    mqttClient: undefined,
-    lastSeqId: 0,
-    syncToken: undefined
+    clientMutationId: 0
   };
 
   var api = {
@@ -422,4 +419,3 @@ function login(loginData, options, callback) {
 }
 
 module.exports = login;
-
